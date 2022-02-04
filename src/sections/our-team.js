@@ -1,74 +1,64 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { useRef, useState, useEffect } from 'react';
-import { jsx, Box, Container, Image } from 'theme-ui';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SectionHeading from 'components/section-heading';
-import TeamMember from 'components/cards/team-member';
+import { useRef, useState, useEffect } from "react";
+import { jsx, Box, Container, Image } from "theme-ui";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SectionHeading from "components/section-heading";
+import TeamMember from "components/cards/team-member";
 
-import avatar1 from 'assets/images/team/member1.jpg';
-import avatar2 from 'assets/images/team/member2.jpg';
-import avatar3 from 'assets/images/team/member3.jpg';
-import arrowRight from 'assets/images/icons/arrow-right.png';
+import avatar1 from "assets/images/team/member1.jpg";
+import avatar2 from "assets/images/team/member2.jpg";
+// import avatar3 from 'assets/images/team/member3.jpg';
+import arrowRight from "assets/images/icons/arrow-right.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
 const data = [
-  
   {
     id: 1,
     avatar: avatar2,
-    name: 'Lokesh Chauhan',
-    designation: 'C E O',
+    name: "Lokesh Chauhan",
+    designation: "C E O",
     socialLinks: [
       {
-        name: 'behance',
-        link: 'http://behance.net/lokeshchauhan2',
+        name: "behance",
+        link: "http://behance.net/lokeshchauhan2",
       },
       {
-        name: 'twitter',
-        link: 'http://twitter.com/lowkeschauhan',
+        name: "twitter",
+        link: "http://twitter.com/lowkeschauhan",
       },
       {
-        name: 'website',
-        link: 'http://lokeshchauhann.com',
+        name: "website",
+        link: "http://lokeshchauhann.com",
       },
       {
-        name: 'instagram',
-        link: 'http://instagram.com/lowkeschauhan',
+        name: "instagram",
+        link: "http://instagram.com/lowkeschauhan",
       },
-      
     ],
   },
   {
     id: 2,
     avatar: avatar1,
-    name: 'Heemank Verma',
-    designation: 'C T O',
+    name: "Heemank Verma",
+    designation: "C T O",
     socialLinks: [
       {
-        name: 'github',
-        link: 'https://github.com/heemankv',
+        name: "github",
+        link: "https://github.com/heemankv",
       },
       {
-        name: 'linkedin',
-        link: 'https://www.linkedin.com/in/heemankv/',
+        name: "linkedin",
+        link: "https://www.linkedin.com/in/heemankv/",
       },
       {
-        name: 'instagram',
-        link: 'https://www.instagram.com/heemank_v',
+        name: "instagram",
+        link: "https://www.instagram.com/heemank_v",
       },
     ],
   },
-  {
-    id: 3,
-    avatar: avatar3,
-    name: 'Yash Chhillar',
-    designation: 'C M O',
-    socialLinks: [
-    ],
-  }
 ];
 
 const OurTeam = () => {
@@ -179,53 +169,53 @@ export default OurTeam;
 
 const styles = {
   section: {
-    position: 'center',
+    position: "center",
     pt: [11],
     pb: [11, null, null, 12, null, 14],
   },
   heading: {
     p: {
       maxWidth: 500,
-      m: '10px auto 0',
+      m: "10px auto 0",
     },
   },
   teamWrapper: {
-    position: 'relative',
+    position: "relative",
     pl: [6],
     pr: [6, null, null, 0],
-    transition: '0.3s ease-in-out 0s',
-    '.swiper-arrow': {
-      backgroundColor: '#fff',
+    transition: "0.3s ease-in-out 0s",
+    ".swiper-arrow": {
+      backgroundColor: "#fff",
       border: 0,
-      cursor: 'pointer',
+      cursor: "pointer",
       padding: 0,
-      display: 'flex',
+      display: "flex",
       width: [30, null, null, null, 40, 60],
       height: [30, null, null, null, 40, 60],
-      alignItems: 'center',
-      justifyContent: 'center',
-      boxShadow: '0px 7px 14px rgba(25, 60, 101, 0.06)',
-      borderRadius: '50%',
-      position: 'absolute',
+      alignItems: "center",
+      justifyContent: "center",
+      boxShadow: "0px 7px 14px rgba(25, 60, 101, 0.06)",
+      borderRadius: "50%",
+      position: "absolute",
       zIndex: 2,
-      top: 'calc(50% - 40px)',
-      transform: 'translateY(-50%)',
+      top: "calc(50% - 40px)",
+      transform: "translateY(-50%)",
       outline: 0,
       img: {
-        maxWidth: [8, 10, null, null, '100%'],
+        maxWidth: [8, 10, null, null, "100%"],
       },
     },
-    '.swiper-arrow-left': {
+    ".swiper-arrow-left": {
       left: [3, null, null, null, 20, 50],
       img: {
-        transform: 'rotate(180deg)',
-        marginLeft: '-4px',
+        transform: "rotate(180deg)",
+        marginLeft: "-4px",
       },
     },
-    '.swiper-arrow-right': {
+    ".swiper-arrow-right": {
       right: [3, null, null, null, 20, 50],
       img: {
-        marginRight: '-4px',
+        marginRight: "-4px",
       },
     },
   },
