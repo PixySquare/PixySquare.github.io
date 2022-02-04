@@ -21,14 +21,14 @@ const data = [
     title: ``,
     description: ``,
   },
-  // {
-  //   id: 2,
-  //   slug: '#how-to',
-  //   thumbnail: thumb6,
-  //   showDescription: false,
-  //   title: ``,
-  //   description: ``,
-  // },
+  {
+    id: 2,
+    slug: '#how-to',
+    thumbnail: thumb6,
+    showDescription: false,
+    title: ``,
+    description: ``,
+  },
   {
     id: 3,
     slug: "#how-to",
